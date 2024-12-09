@@ -1,3 +1,27 @@
+// console.log("hello world!");
+
+// const myName = "Reece De Padua";
+
+// const h1 = document.querySelector(".heading-primary");
+
+// h1.addEventListener("click", function () {
+//   h1.textContent = myName;
+//   h1.style.backgroundColor = "red";
+//   h1.style.padding = "5rem";
+// });
+
+// Set current year
+const yearEl = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;
+
+const btnNav = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+btnNav = document.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+// Make mobile navigation work
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
